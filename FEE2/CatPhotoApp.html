@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML5 has some elements that identify different content areas. 
+    These elements make your HTML easier to read and help with Search Engine Optimization (SEO) and accessibility. -->
+<main>
+    <h1>CatPhotoApp</h1>
+    <!-- divide the cat content from the future content by using section -->
+    <section>
+    <h2>Cat Photos</h2>
+          <!-- TODO: Add link to cat photos -->
+          <!-- by adding target=_blank in a anchor the link will be opened in a new window and without including target=_blank in the opening brackets of the a , the link will open in the same window -->
+    <p>See more cat <a target=_blank href="https://in.images.search.yahoo.com/search/images;_ylt=Awr1RfA5G5xlRMYDjnq7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=cut+cat+pictures&fr2=piv-web&type=E210IN885G0&fr=mcafee">photos</a> in our gallery.
+    </p>
+          <!-- You can add images to your website by using the img element. img elements have an opening tag without a closing tag. 
+           A tag for an element without a closing tag is known as a self-closing tag. -->
+
+        <!-- HTML attributes are special words used inside the opening tag of an element to control the element's behavior.
+            The src attribute in an img element specifies the image's URL (where the image is located).
+            Here is an example of an img element with a src attribute pointing to the freeCodeCamp logo: 
+            <img src= "catphoto.jpeg"> here can be link of any image too which available on any prowser-->
+
+        <!-- All img elements should have an alt attribute. 
+            The alt attribute's text is used for screen readers to improve accessibility and is displayed if the image fails to load. For example, <img src="cat.jpg" alt="A cat"> 
+            has an alt attribute with the text A cat.-->
+        
+    
+    <a href="https://in.images.search.yahoo.com/search/images;_ylt=Awr1RfA5G5xlRMYDjnq7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=cut+cat+pictures&fr2=piv-web&type=E210IN885G0&fr=mcafee" target="_blank"> 
+    <img src= "catphoto.jpeg" alt="A cute cat is lying on its back">
+    </a>
+     <figcaption>Hello! I am your <em>kitty</em>.</figcaption>  <!-- figure caption below the  img -->
+         <!-- You can link to another page with the anchor (a) element. 
+            For example,
+            <a href='https://freecodecamp.org'>   
+            </a> 
+            would link to freecodecamp.org. --> 
+    <!-- In previous steps you used an anchor element to turn text into a link. Other types of content can also be turned into a link by wrapping it in anchor tags.
+
+    Turn the image into a link by surrounding it with necessary element tags. Use https://freecatphotoapp.com as the anchor's href attribute value.-->
+    </section>
+
+    <!-- section 2 -->
+    <section>
+       <h2>Cat Lists</h2> 
+
+       <!--  \When you add a lower rank heading element to the page, it's implied that you're starting a new subsection.
+       After the last h2 element of the second section element, 
+       add an h3 element with this text:-->
+
+       <h3>Things cats love:</h3>
+       <!-- After the h3 element with the Things cats love: text, add an unordered list (ul) element. 
+        Note that nothing will be displayed at this point. -->
+
+       <!-- Use list item (li) elements to create items in a list. 
+        Here is an example of list items in an unordered list: -->
+
+       <ul>
+        <li>Milk</li>
+        <li>Cheese</li>
+        <li>Rat</li>
+        <li>Cat nip</li>
+        <li>Laser pointers</li>
+        <li>Lasagna</li>
+       </ul>
+    <figure>
+       <img src="cheeseSlice.jpeg" alt="A slice of cheese on a Plate.">
+       <!-- A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element.
+         For example, <figcaption>A cute cat</figcaption> 
+        adds the caption A cute cat. -->
+    <figcaption>Cats <em>love </em> cheese.</figcaption>
+    <!-- Emphasize the word love in the figcaption element
+        by wrapping it in an emphasis em element. -->
+    </figure>
+    <h3>Top 3 things cats hate:</h3>
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol> 
+      <figure>
+        <img src="otherCats.jpeg" alt="cat hate other cats">
+        <!-- The strong element is used to indicate that some text is of strong importance or urgent.
+            In the figcaption you just added, 
+            indicate that hate is of strong importance by wrapping it in a strong element. -->
+        <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+      </figure>
+    </section>
+
+    <!-- section 3 -->
+    <section>
+        <h2>Cat Form</h2>
+    <!-- The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url.
+         Add an action attribute with the value https://freecatphotoapp.com/submit-cat-photo to the form element. -->
+        <form action="dataOfCat.xlsx">
+
+    <!-- The input element allows you several ways to collect data from a web form. Like img elements, input elements are self-closing and do not need closing tags.
+        Nest an input element in the form element. -->
+    <!-- There are many kinds of inputs you can create using the type attribute. You can easily create a password field, reset button, or a control to let users select a file from their computer. -->
+    <!-- Create a text field to get text input from a user by adding the type attribute with the value text to the input element.    -->
+    <!-- Placeholder text is used to give people a hint about what kind of information to enter into an input. For example, <input type="text" placeholder="Email address">. -->
+        <input type="text" name="email" placeholder="Email address" required>
+        <button type="Submit">submit</button>
+        </form>
+    </section>
+</main>
+</body>
+</html>
